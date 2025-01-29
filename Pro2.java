@@ -1,24 +1,21 @@
-//WAP to find whether string is palindrome or not.
 import java.util.Scanner;
+class Math{
+	void arithMetic(int i){
+		System.out.println("Multiplication is: "+(i*0));
+	}
+	void arithMetic(int i, int j){
+		System.out.println("Multiplication is: "+(i*j));
+	}
+	void arithMetic(int i, int j, int k){
+		System.out.println("Multiplication is: "+(i*j*k));
+	}
+}
 class Pro2{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter a String:");
-		String n =sc.nextLine();
-		int k=n.length();
-		String m="";
-		char j;
-		for(int i=k-1;i>=0;i--){
-			m+=n.charAt(i);//how it's use I don't Know.
-
-		}
-		if(n.equals(m)){
-			System.out.print(m+" is Palindrome.");
-		}
-		else{
-			System.out.print(m+" is not Palindrome.");
-		}
-		
-
+		Math m = new Math();
+		m.arithMetic(42,15);
+		m.arithMetic(12);
+		m.arithMetic(12,10,12);
 	}
 }
