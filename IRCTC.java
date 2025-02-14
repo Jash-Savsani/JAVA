@@ -97,7 +97,7 @@ class IRCTC{
 			System.out.print("__");
 		}
 	 	System.out.print("\nFROM\tTO\tDATE\tCLASSTYPE\tGENERAL\t   TOTALAMOUNT\n\n");
-	 	System.out.print(city1+"\t"+city2+"\t"+date+"    "+cls+"\t\t"+ general+"    "+ta);//here is two error
+	 	System.out.print(city1+"\t"+city2+"\t"+date+"    "+cls+"\t\t"+ general+"    "+ta);
 		System.out.print("\n");
 		for(int i=1;i<=33;i++){
 			System.out.print("__");
