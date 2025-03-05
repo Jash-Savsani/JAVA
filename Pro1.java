@@ -1,20 +1,36 @@
+import java.util.Scanner;
+class Student{
+	String name;
+	int roll_no;
+	double spi;
+	String course;
+	void setter(String name,int roll_no,double spi,String course){
+		this.name=name;
+		this.roll_no = roll_no;
+		this.spi = spi;
+		this.course = course;
+	}
+	void getter(){
+		System.out.println("Student name:"+name);
+		System.out.println("Student Roll No:"+roll_no);
+		System.out.println("Student SPI:"+spi);
+		System.out.println("Student Course:"+course);
+	}
+}
 class Pro1{
 	public static void main(String[] args) {
-		String s1 = "Hello";
-		String s2 = "Hello";
-		String s3 = new String("Hello");
-		String s4 = new String("Hello");
-		String s5 = s4;
-		String s6 = s1;
-		System.out.println(s1.equals(s4));
-		System.out.println(s6==s1);
-		System.out.println(s2==s3);
-		System.out.println(s1==s2);
-		s1 = "Jash";
-		System.out.println(s2);
-		System.out.println(s3==s4);
-		System.out.println(s5==s4);
-		
-
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter Name:");
+		String name = sc.nextLine();
+		System.out.print("Enter Roll_No:");
+		int roll_no = sc.nextInt();
+		System.out.print("Enter SPI:");
+		double spi = sc.nextDouble();
+		sc.nextLine();
+		System.out.print("Enter Course:");
+		String course = sc.nextLine();
+		Student s1 = new Student();
+		s1.setter(name,roll_no,spi,course);
+		s1.getter();
 	}
 }
